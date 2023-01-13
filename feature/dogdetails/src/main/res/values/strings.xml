@@ -1,0 +1,7 @@
+<resources>
+    <string name="breed_name">BreedName: </string>
+    <string name="temperament">Breed Temperament: </string>
+    <string name="origin">Breed Origin: </string>
+    <string name="group">Breed Group: </string>
+    <string name="dog_details">Dog Details</string>
+</resources>

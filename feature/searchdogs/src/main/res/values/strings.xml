@@ -1,0 +1,7 @@
+<resources>
+    <string name="breed_name">Breed Name:</string>
+    <string name="breed_group">Breed Group:</string>
+    <string name="breed_origin">Breed Origin:</string>
+    <string name="breed_temperament">Temperament:</string>
+    <string name="search_dog_breed">Search a Dog Breed</string>
+</resources>

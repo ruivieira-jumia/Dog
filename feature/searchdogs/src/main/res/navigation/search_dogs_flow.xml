@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_dogs_flow"
+    app:startDestination="@id/searchDogsFragment">
+
+    <fragment
+        android:id="@+id/searchDogsFragment"
+        android:name="com.android.searchdogs.SearchDogsFragment"
+        android:label="fragment_search_dogs"
+        tools:layout="@layout/fragment_search_dogs" />
+</navigation>

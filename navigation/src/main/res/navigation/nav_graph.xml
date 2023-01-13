@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dogs_list_flow">
+
+
+    <include app:graph="@navigation/dogs_list_flow" />
+
+    <include app:graph="@navigation/search_dogs_flow" />
+
+    <include app:graph="@navigation/dog_details_flow" />
+
+    <action
+        android:id="@+id/action_dogs_list_to_dog_details_flow"
+        app:destination="@id/dog_details_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim">
+
+        <argument
+            android:name="dogBreed"
+            app:argType="com.android.core_model.DogBreed"
+            app:nullable="false" />
+    </action>
+
+    <action
+        android:id="@+id/action_search_dog_to_dog_details_flow"
+        app:destination="@id/dog_details_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popUpTo="@id/search_dogs_flow">
+
+        <argument
+            android:name="dogBreed"
+            app:argType="com.android.core_model.DogBreed"
+            app:nullable="false" />
+    </action>
+</navigation>
